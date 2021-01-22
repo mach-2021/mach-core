@@ -4,6 +4,7 @@ import io.sphere.sdk.client.BlockingSphereClient;
 import io.sphere.sdk.client.SphereClient;
 import io.sphere.sdk.client.SphereClientConfig;
 import io.sphere.sdk.client.SphereClientFactory;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 @ComponentScan("com.mach.commercetools")
 @PropertySource("classpath:/commercetools.properties")
 @ConfigurationProperties
+@Setter
 public class CTConfiguration {
 
     private String projectKey;
