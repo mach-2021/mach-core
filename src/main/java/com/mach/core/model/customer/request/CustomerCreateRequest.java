@@ -1,4 +1,4 @@
-package com.mach.core.model.customer.response;
+package com.mach.core.model.customer.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Builder
-public class CustomerLoginResponse {
-    private String id;
-    private String email;
+public class CustomerCreateRequest {
+
+    private String password;
     private String name;
+    private String email;
 }

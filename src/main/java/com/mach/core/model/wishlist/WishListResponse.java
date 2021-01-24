@@ -1,16 +1,19 @@
-package com.mach.core.model.customer.response;
+package com.mach.core.model.wishlist;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Singular;
+
+import java.util.List;
 
 @AllArgsConstructor
-@Data
 @NoArgsConstructor
 @Builder
-public class CustomerLoginResponse {
+@Data
+public class WishListResponse {
     private String id;
-    private String email;
-    private String name;
+    @Singular
+    private List<WishListItem> items;
 }
