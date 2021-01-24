@@ -8,6 +8,7 @@ buildscript {
         commons_lang_version = "3.11"
         commercetools_version = "1.56.0"
         algolia_version = "3.12.1"
+        http_client_version = "10.10.1"
     }
 
     repositories {
@@ -43,6 +44,8 @@ dependencies {
     implementation "com.algolia:algoliasearch-apache:$algolia_version"
 
     implementation "org.apache.commons:commons-lang3:$commons_lang_version"
+
+    implementation "io.github.openfeign:feign-httpclient:$http_client_version"
 
     implementation "org.projectlombok:lombok:$lombok_version"
     annotationProcessor "org.projectlombok:lombok:$lombok_version"
