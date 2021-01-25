@@ -1,4 +1,4 @@
-package com.mach.core.model.wishlist;
+package com.mach.core.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,13 +7,17 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Builder
-public class WishListItem {
+public class ProductSearchModel {
+
     private String objectID;
     private String name;
+    private String category;
+    private String description;
+    private String productCategory;
     private BigDecimal trending;
     private String picture;
     private String sku;
