@@ -2,6 +2,7 @@ package com.mach.algolia.config;
 
 import com.algolia.search.DefaultSearchClient;
 import com.algolia.search.SearchClient;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.PropertySource;
 @ComponentScan("com.mach.algolia")
 @PropertySource("classpath:/algolia.properties")
 @ConfigurationProperties
+@Setter
 public class AlgoliaConfiguration {
 
     private String applicationId;

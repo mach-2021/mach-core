@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -15,7 +16,7 @@ public class ProductSearchModel {
 
     private String objectID;
     private String name;
-    private String category;
+    private List<String> category;
     private String description;
     private String productCategory;
     private BigDecimal trending;
